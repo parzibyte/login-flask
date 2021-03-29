@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escritorio</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/bulma@0.9.1/css/bulma.min.css">
+
+</head>
+
+<body>
+    <section class="section">
+        <div class="columns">
+            <div class="column is-one-third is-offset-one-third">
+                Hola <strong>{{session["usuario"]}}</strong>
+                <p>A esta página solo se puede acceder si el usuario ha iniciado sesión</p>
+                <a href="{{url_for('logout')}}">Salir</a>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>
